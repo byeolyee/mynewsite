@@ -124,4 +124,75 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button,
 textarea::-webkit-inner-spin-button,
 textarea::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+main {
+  width: 100vh;
+  height: 100vh;
+}
+
+.todo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  width: 50%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.todo-input-area .input-form-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-input-area .input-form-box .todo-input-text {
+  width: 100%;
+  height: 30px;
+  border: 1px solid red;
+}
+.todo-input-area .input-form-box .todo-input-button {
+  display: flex;
+}
+.todo-input-area .input-form-box .todo-input-button .plus-ico {
+  width: 50px;
+  height: 30px;
+  background-color: red;
+}
+
+.todo-list-area {
+  margin-top: 10px;
+}
+.todo-list-area .todo-list .todo-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.todo-list-area .todo-list .todo-item .todo-content-box {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+}
+.todo-list-area .todo-list .todo-item .todo-content-box .todo-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.todo-list-area .todo-list .todo-item .todo-button-box {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+.todo-list-area .todo-list .todo-item .todo-button-box button {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
 }/*# sourceMappingURL=style.css.map */

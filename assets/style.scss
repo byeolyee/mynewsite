@@ -1,2 +1,8 @@
 @import './scss/variables/variables';
 @import "./scss/base/reset";
+@import "./scss/variables/mixin";
+
+@import "./scss/page/todo_container";
+@import "./scss/components/todo_input_area";
+@import "./scss/components/todo_list_area";
+

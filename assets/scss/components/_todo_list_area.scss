@@ -1,0 +1,36 @@
+.todo-list-area{
+    margin-top : 10px;
+    .todo-list{
+        .todo-item{
+            width : 100%;
+            display : flex;
+            // justify-content: space-between;
+            align-items: center;
+            margin : 10px 0;
+            .todo-content-box{
+                width : 60%;
+                display :flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-shrink: 0;
+                .todo-text{
+                    @include ellipsis;
+                }
+
+            }
+            .todo-button-box{
+                width : 40%;
+                display : flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-shrink: 0;
+                button{
+                    border: 1px solid blue;
+                    border-radius: 5px;
+                    padding : 5px;
+                    margin-right : 5px;
+                }
+            }
+        }
+    }
+}
